@@ -11,7 +11,7 @@ stop:
 up:
 	cd ${folder} && docker-compose up -d
 bash:
-	cd ${folder} && docker-compose exec ${container} /bin/bash
+	cd ${folder} && docker-compose exec ${container} //bin/bash
 composer-install:
 	cd ${folder} && docker-compose run --rm ${container} sh -lc 'composer install'
 test:
